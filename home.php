@@ -105,7 +105,7 @@ $output = $row['count'];
 				
                             <span class="text-dark mr-3">
 				  
-                                <?php echo $output; ?>
+                               <h3 <?php echo $row['count']; ?>/h3>
 				    
                             </span>
 				
