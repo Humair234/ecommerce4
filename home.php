@@ -104,7 +104,7 @@ $num_rows=$values['total'];
 			 
                             <span class="text-dark mr-3">
 				  
-                               <h3 echo $num_rows;</h3>
+                              <?php echo $num_rows;?>
 				    
                             </span>
 				
