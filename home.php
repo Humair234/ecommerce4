@@ -62,9 +62,9 @@
 </style>
 
 <?php
-$query= "SELECT COUNT(*) AS count FROM 'orders'";
+$query = "SELECT COUNT(*) AS count FROM 'orders'";
 $query_result = mysqli_query($conn, $query);
-while(row= mysqli_fetch_assoc(query_result)){
+while($row = mysqli_fetch_assoc(query_result)){
 $output = $row('count');
 }	
 ?>
