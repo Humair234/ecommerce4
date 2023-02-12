@@ -88,7 +88,12 @@
                 </div>
             </div>
         </div>
-
+		<?php
+		sql="SELECT count(id) AS total FROM orders";
+$result=mysqli_query($conn,$sql);
+$values=mysqli_fetch__assoc($result);
+$num_rows=$values['total'];
+?>
         <div class="col-md-6 mb-3">
             <div class="card bg-white border-0 circle-secondary theme-circle">
                 <div class="card-body">
@@ -99,7 +104,7 @@
 			 
                             <span class="text-dark mr-3">
 				  
-                               <h3 class="">20</h3>
+                               <h3 echo $num_rows;</h3>
 				    
                             </span>
 				
