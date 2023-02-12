@@ -94,12 +94,14 @@
                     <div class="mt-3">
                         <div class="d-flex align-items-center">
                             <span class="text-dark mr-3">
-                                <h3 class="">20</h3>
-                            </span>
-				 <?php
+				     <?php
                             $totalorder = $conn->query("SELECT COUNT(*) FROM order ");
                                 while($row=$totalorder->fetch_assoc()):
                                     ?>
+                                
+				    
+                            </span>
+				
                         </div>
                     </div>
                 </div>
