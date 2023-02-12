@@ -92,13 +92,14 @@
                 <div class="card-body">
                     <h4 class="text-dark ">Orders</h4>
                     <div class="mt-3">
+			    <?php
+                            
                         <div class="d-flex align-items-center">
-				<?php
-                            $totalorder = $conn->query("SELECT COUNT(*) FROM order ");
-                                while($row=$totalorder->fetch_assoc()):
-                                    ?>
+				
                             <span class="text-dark mr-3">
-				  <p><?php echo $row['totalorder'] ?></p>   
+				  $totalorder = $conn->query("SELECT COUNT(id) FROM orders ");
+                                while($row=$totalorder->fetch_assoc()):
+                                    ?>   
                                 
 				    
                             </span>
