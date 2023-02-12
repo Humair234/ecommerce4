@@ -93,8 +93,8 @@
                     <h4 class="text-dark ">Orders</h4>
                     <div class="mt-3">
 			    <?php
-                            $result = mysql_query("SELECT count(id) from orders;");
-                            echo mysql_result($result, 0)
+                            $result = mysqli_query("SELECT count(id) from orders;");
+                            echo mysqli_result($result, 0)
                                
 
                                     ?>   
