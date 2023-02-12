@@ -87,7 +87,7 @@ $output = $row('count');
                     <div class="mt-3">
                         <div class="d-flex align-items-center">
                             <span class="text-dark mr-3">
-                                <h3 class="">30</h3>
+                                <h3 class="">50</h3>
                             </span>
                         </div>
                     </div>
