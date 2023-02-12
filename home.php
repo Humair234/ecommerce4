@@ -93,14 +93,16 @@
                     <h4 class="text-dark ">Orders</h4>
                     <div class="mt-3">
 			    <?php
-                            $totalorder = $conn->query("SELECT COUNT(id) FROM orders ");
-                                while($row=$totalorder->fetch_assoc()):
+                            $result = mysql_query("SELECT count(id) from orders;");
+                            echo mysql_result($result, 0)
+                               
+
                                     ?>   
                         <div class="d-flex align-items-center">
 				
                             <span class="text-dark mr-3">
 				  
-                                <p><?php echo $row['id'] ?></p>
+                                
 				    
                             </span>
 				
