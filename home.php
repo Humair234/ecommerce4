@@ -88,13 +88,6 @@
                 </div>
             </div>
         </div>
-		
-		<?php
-$order=$conn->query("SELECT COUNT(*) AS count FROM 'orders'");
-while($row=$order->fetch_assoc()):{
-$output = $row['count'];
-}
-?>
 
         <div class="col-md-6 mb-3">
             <div class="card bg-white border-0 circle-secondary theme-circle">
@@ -106,7 +99,7 @@ $output = $row['count'];
 			 
                             <span class="text-dark mr-3">
 				  
-                               <h3 <?php echo $row['count']; ?>/h3>
+                               <h3 class="">20</h3>
 				    
                             </span>
 				
