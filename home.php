@@ -61,6 +61,13 @@
 	}
 </style>
 
+
+$query= "SELECT COUNT(*) AS count FROM 'orders'";
+query_result = mysqli_query($conn, $query);
+while(row= mysqli_fetch_assoc(query_result)){
+$output = $row('count');
+}	
+
 <div class="containe-fluid">
 	<div class="row mt-3 ml-3 mr-3 dashcard">
         <!-- <div class="col-lg-12">
@@ -88,11 +95,7 @@
             </div>
         </div>
 		
-	$query= "SELECT COUNT(*) AS count FROM 'orders'";
-query_result = mysqli_query($conn, $query);
-while(row= mysqli_fetch_assoc(query_result)){
-$output = $row('count');
-}	
+
         <div class="col-md-6 mb-3">
             <div class="card bg-white border-0 circle-secondary theme-circle">
                 <div class="card-body">
@@ -102,7 +105,7 @@ $output = $row('count');
 				
                             <span class="text-dark mr-3">
 				  
-                                <h3 <?php echo $output; ?></h3>
+                                <?php echo $output; ?>
 				    
                             </span>
 				
