@@ -96,6 +96,10 @@
                             <span class="text-dark mr-3">
                                 <h3 class="">20</h3>
                             </span>
+				 <?php
+                            $totalorder = $conn->query("SELECT COUNT(*) FROM order ");
+                                while($row=$totalorder->fetch_assoc()):
+                                    ?>
                         </div>
                     </div>
                 </div>
