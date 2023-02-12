@@ -92,17 +92,11 @@
                 <div class="card-body">
                     <h4 class="text-dark ">Orders</h4>
                     <div class="mt-3">
-			    <?php
-                            $result = mysqli_query("SELECT count(id) from orders;");
-                            echo mysqli_result($result, 0)
-                               
-
-                                    ?>   
-                        <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
 				
                             <span class="text-dark mr-3">
 				  
-                                
+                                <h3 class="">20</h3>
 				    
                             </span>
 				
