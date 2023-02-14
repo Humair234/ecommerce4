@@ -100,7 +100,7 @@
 			 
                             <span class="text-dark mr-3">
 				  <?php
-$dash_order_query = "SELECT * from orders";
+$dash_order_query = ("SELECT * from orders");
 $dash_order_query_run->query($conn, $dash_order_query);
 
 if($order_total->num_rows($dash_order_query_run))
