@@ -88,23 +88,30 @@
                 </div>
             </div>
         </div>
-		<?php
-		sql="SELECT count(id) AS total FROM orders";
-$result=mysqli_query($conn,$sql);
-$values=mysqli_fetch__assoc($result);
-$num_rows=$values['total'];
-?>
+		
         <div class="col-md-6 mb-3">
             <div class="card bg-white border-0 circle-secondary theme-circle">
                 <div class="card-body">
                     <h4 class="text-dark ">Orders</h4>
+			
                     <div class="mt-3">
                     <div class="d-flex align-items-center">
 				
 			 
                             <span class="text-dark mr-3">
-				  
-                              <?php echo $num_rows;?>
+				   <?php
+$dash_order_query = "SELECT * from orders";
+$dash_order_query_run = mysqli_query($conn, $dash_order_query);
+
+if($order_total = mysqli_num_rows($dash_order_query_run))
+{
+echo '<h3 class=""> ' .$category_total.' </h3>';
+}
+else
+{
+echo '<h3 class="">' No Data </h3'>;
+}
+?>
 				    
                             </span>
 				
