@@ -99,7 +99,7 @@
 				
 			 
                             <span class="text-dark mr-3">
-				    echo '<h3 class="">60</h3> 
+			  <h3 class="">60</h3> 
 				    
                             </span>
 				
