@@ -99,11 +99,7 @@
 				
 			 
                             <span class="text-dark mr-3">
-				    <?php
-				$product = $conn->query("SELECT * FROM orders"); 
-                                $dash_order_query_run = $product->num_rows;
-                                 echo $dash_order_query_run;
-                                  >?
+				    echo '<h3 class="">60</h3> 
 				    
                             </span>
 				
