@@ -99,20 +99,11 @@
 				
 			 
                             <span class="text-dark mr-3">
-				<?php
-$dash_order_query = "SELECT * from orders";
-$dash_order_query_run = query($conn, $dash_order_query);
-
-if($order_total = num_rows($dash_order_query_run))
-{
-echo '<h3 class=""> ' .$order_total.' </h3>';
-}
-else
-{
-echo '<h3 class="">' No Data </h3'>;
-}
-?>
-
+				    <?php
+				$product = $conn->query("SELECT * FROM orders"); 
+                                $dash_order_query_run = $product->num_rows;
+                                 echo $dash_order_query_run;
+                                  >?
 				    
                             </span>
 				
